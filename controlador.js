@@ -6,7 +6,7 @@ const app = express();
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './uploads')
+    cb(null, 'https://drive.google.com/drive/folders/1--hArbjQvUvkj3WhTprH5rE-lQElc2l9?usp=share_link')
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname)
